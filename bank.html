@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script/calculate.js"></script>
+</head>
+<body>
+    <h1 class="text-5xl mt-5 text-center">This is <span class="font-semibold text-blue-700">Rifat's Bank</span></h1>
+
+    <div class="mt-10 flex place-content-center ">
+        <div class="bg-sky-300 w-72 h-36 mx-5 my-10 py-5">
+            <p class="text-center text-4xl">Deposit <br><span id="deposit-amount"></span>$</p>
+    </div>
+        <div class="bg-emerald-300 w-72 h-36 mx-5 my-10 py-5">
+            <p class="text-center text-4xl">Withdraw <br><span id="withdraw-amount"></span>$</p>
+        </div>
+        <div class="bg-amber-200 w-72 h-36 mx-5 my-10 py-5">
+            <p class="text-center text-4xl">Balance <br><span id="balance-amount"></span> $</p>
+        </div>
+    </div>
+
+    <div class="flex place-content-center">
+        <div class="bg-red-200 w-72 h-46 mx-5 my-10 py-5">
+            <p class="px-5 py-3 text-3xl">Please Deposit</p>
+            <div id="form" class="px-5 py-3">
+                <input class="h-10  place-content-center" id='deposit-form' type="text" placeholder="Deposit Amount">
+                
+            <button class="bg-amber-600 mt-4 rounded-e h-10 w-20 " id="btn-deposit">Deposit</button>
+            </div>
+            
+        </div>
+        <div class="bg-indigo-200 w-72 h-46 mx-5 my-10 py-5">
+            <p class="px-5 py-3 text-3xl">Please Withdraw</p>
+            <div id="form" class="px-5 py-3">
+                <input class="h-10  place-content-center" id="withdraw-form" type="text" placeholder="Withdraw Amount">
+               
+            <button class="bg-amber-600 mt-4 rounded-e h-10 w-20 " id="btn-withdraw">Withdraw</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
