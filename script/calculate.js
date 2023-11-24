@@ -29,9 +29,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("btn-withdraw").addEventListener('click', function () {
         
         withdrawAmount=document.getElementById("withdraw-form").value;
-        withdrawForm.innerHTML= withdrawAmount;
-        balance=balance-parseFloat(withdrawAmount);
-        balanceForm.innerHTML= balance;
+        
+        if (parseFloat(withdrawAmount)>balance) {
+            alert("You don't have enough money");
+        }
+        else{
+            withdrawForm.innerHTML= withdrawAmount;
+            balance=balance-parseFloat(withdrawAmount);
+            balanceForm.innerHTML= balance;
+        }
+        
 
         document.getElementById("withdraw-form").value="";
     });
